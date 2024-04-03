@@ -33,6 +33,11 @@ class User extends Authenticatable
         'remember_token',
     ];
 
+    public function country()
+    {
+        return $this->belongsTo(Country::class);
+    }
+
     /**
      * The attributes that should be cast.
      *
